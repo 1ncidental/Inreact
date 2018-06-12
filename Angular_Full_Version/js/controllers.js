@@ -2127,7 +2127,7 @@ function codeEditorCtrl($scope) {
  * ngGridCtrl - Controller for code ngGrid
  */
 
-function ngGridCtrl($scope) {
+function ngGridCtrl($scope, $http) {
     $scope.ngData = []
 $http.get('http://206.189.200.105:1337/recordeddata')
   .then(function(result) {
