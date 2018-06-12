@@ -2127,7 +2127,6 @@ function codeEditorCtrl($scope) {
  * ngGridCtrl - Controller for code ngGrid
  */
 
- 
 
 function ngGridCtrl($scope, $http) {
     $scope.ngData = []
