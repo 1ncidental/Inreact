@@ -2150,6 +2150,24 @@ function ngGridCtrl($scope) {
     };
 }
 
+/**
+ * ngGridCtrl - Controller for code ngGrid
+ */
+function ngTempCtrl($scope) {
+    $scope.ngData = []
+$http.get('http://206.189.200.105:1337/recordeddata')
+  .then(function(result) {
+    $scope.ngData = result.data;
+});
+
+    $scope.ngOptions = { data: 'ngData' };
+    $scope.ngOptions2 = {
+        data: 'ngData',
+        showGroupPanel: true,
+        jqueryUIDraggable: true
+    };
+}
+
 
 /**
  * notifyCtrl - Controller angular notify
