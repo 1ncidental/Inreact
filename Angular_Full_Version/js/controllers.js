@@ -2128,6 +2128,8 @@ function codeEditorCtrl($scope) {
  */
 
  
+=======
+>>>>>>> parent of 1b3f216... http options
 function ngGridCtrl($scope, $http) {
     $scope.ngData = []
 $http.get('http://206.189.200.105:1880/api/')
