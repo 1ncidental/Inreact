@@ -2955,7 +2955,7 @@ function loadingCtrl($scope, $timeout){
 }
 
 
-function datatablesCtrl($scope,DTOptionsBuilder){
+function datatablesCtrl($scope, $http, DTOptionsBuilder){
 
     $scope.dtOptions = DTOptionsBuilder.newOptions()
         .withDOM('<"html5buttons"B>lTfgitp')
@@ -2974,13 +2974,18 @@ function datatablesCtrl($scope,DTOptionsBuilder){
                         .addClass('compact')
                         .css('font-size', 'inherit');
                 }
+			$scope.rTemps = []
+			$http.get('http://206.189.200.105:1880/api/')
+			.then(function(result) {
+			$scope.rTemps = result.data;
             }
         ]);
 
     /**
      * persons - Data used in Tables view for Data Tables plugin
      */
-    $scope.persons = [
+  
+  $scope.persons = [
         {
             id: '1',
             firstName: 'Monica',
