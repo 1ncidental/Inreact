@@ -2955,12 +2955,7 @@ function loadingCtrl($scope, $timeout){
 }
 
 
-function datatablesCtrl($scope, $http, DTOptionsBuilder){
-			$scope.rTemps = []
-			$http.get('http://206.189.200.105:1880/api/')
-			.then(function(result) {
-			$scope.rTemps = result.data;
-            }
+function datatablesCtrl($scope, DTOptionsBuilder){
 
     $scope.dtOptions = DTOptionsBuilder.newOptions()
         .withDOM('<"html5buttons"B>lTfgitp')
