@@ -2955,7 +2955,7 @@ function loadingCtrl($scope, $timeout){
 }
 
 
-function datatablesCtrl($scope, DTOptionsBuilder){
+function datatablesCtrl($scope,DTOptionsBuilder){
 
     $scope.dtOptions = DTOptionsBuilder.newOptions()
         .withDOM('<"html5buttons"B>lTfgitp')
@@ -2974,8 +2974,7 @@ function datatablesCtrl($scope, DTOptionsBuilder){
                         .addClass('compact')
                         .css('font-size', 'inherit');
                 }
-
-			
+            }
         ]);
 
     /**
