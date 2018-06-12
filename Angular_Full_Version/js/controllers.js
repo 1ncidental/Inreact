@@ -2130,8 +2130,8 @@ function codeEditorCtrl($scope) {
 function ngGridCtrl($scope, $http) {
     $scope.ngData = []
 $http.get('http://206.189.200.105:1337/recordeddata')
-  .then(function(result) {
-    $scope.ngData = result.data;
+  .then(function(result.json) {
+    $scope.ngData = result.json;
 });
 
     $scope.ngOptions = { data: 'ngData' };
