@@ -2127,7 +2127,6 @@ function codeEditorCtrl($scope) {
  * ngGridCtrl - Controller for code ngGrid
  */
 
-<<<<<<< HEAD
 function ngGridCtrl($scope) {
     $scope.ngData = []
 $http.get('http://206.189.200.105:1337/recordeddata')
@@ -2143,8 +2142,7 @@ $http.get('http://206.189.200.105:1337/recordeddata')
     };
 }
 
-=======
->>>>>>> parent of 8ea2c31... New table
+
 
 /**
  * notifyCtrl - Controller angular notify
