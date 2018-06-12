@@ -2126,7 +2126,10 @@ function codeEditorCtrl($scope) {
 /**
  * ngGridCtrl - Controller for code ngGrid
  */
-
+const httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
+ 
 function ngGridCtrl($scope, $http) {
     $scope.ngData = []
 $http.get('http://206.189.200.105:1880/api/')
