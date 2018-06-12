@@ -2126,11 +2126,15 @@ function codeEditorCtrl($scope) {
 /**
  * ngGridCtrl - Controller for code ngGrid
  */
+<<<<<<< HEAD
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
  
+=======
+
+>>>>>>> parent of 1b3f216... http options
 function ngGridCtrl($scope, $http) {
     $scope.ngData = []
 $http.get('http://206.189.200.105:1880/api/')
