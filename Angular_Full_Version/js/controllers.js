@@ -2139,6 +2139,8 @@ $http.get('http://206.189.200.105:1880/api/')
     $scope.ngOptions2 = {
         data: 'ngData',
         showGroupPanel: true,
+		paginationPageSizes: [5, 10, 25],
+		paginationPageSize: 5,
         jqueryUIDraggable: true
     };
 }
