@@ -2129,7 +2129,7 @@ function codeEditorCtrl($scope) {
 
 function ngGridCtrl($scope, $http) {
     $scope.ngData = []
-$http.get('http://206.189.200.105:1337/recordeddata')
+$http.get('http://206.189.200.105:1880/api/recordeddata')
   .then(function(result) {
     $scope.ngData = result.data;
 });
