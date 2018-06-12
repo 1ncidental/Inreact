@@ -2956,6 +2956,11 @@ function loadingCtrl($scope, $timeout){
 
 
 function datatablesCtrl($scope, $http, DTOptionsBuilder){
+			$scope.rTemps = []
+			$http.get('http://206.189.200.105:1880/api/')
+			.then(function(result) {
+			$scope.rTemps = result.data;
+            }
 
     $scope.dtOptions = DTOptionsBuilder.newOptions()
         .withDOM('<"html5buttons"B>lTfgitp')
@@ -2974,11 +2979,8 @@ function datatablesCtrl($scope, $http, DTOptionsBuilder){
                         .addClass('compact')
                         .css('font-size', 'inherit');
                 }
-			$scope.rTemps = []
-			$http.get('http://206.189.200.105:1880/api/')
-			.then(function(result) {
-			$scope.rTemps = result.data;
-            }
+
+			
         ]);
 
     /**
